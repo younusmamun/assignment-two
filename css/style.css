@@ -1,0 +1,161 @@
+.logo img{
+    width: 300px;
+    margin-top: 10px;
+}
+header{
+    background-color: #FFFBF0;
+    height: 600px;
+
+}
+.header-top{
+    padding-top: 10px;;
+}
+.hero-section{
+    background-color: honeydew;
+}
+
+.header-content, .products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+       
+}
+.header-text{
+    margin-top: 100px;
+}
+.colored-text{
+    color: orange;
+}
+.header-text h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+
+
+.section-title {
+	padding: 40px 0px;
+    text-transform: uppercase;
+    color:#363958;
+}
+ .products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;   
+    
+}
+.product{   
+    background-color: grey;
+    padding: 20px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+.product> img{
+    background-color:#f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.product>h4{
+    font-weight: bold;
+    color: #848598;
+}
+.price-buy{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   
+}
+.price-buy > h3 {
+    font-weight: bold;
+    color: #D58845;
+}
+.price-buy > a{
+    text-align: center;
+}
+.icon_style{
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.man-products{
+    margin-bottom: 50px;
+}
+.feature-section{
+    margin-bottom: 100px;
+}
+.feature-single{
+    display: flex;
+    
+}
+.feature-single >img{
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;;
+}
+.feature-text{
+    margin-top:10px;
+}
+.feature-text h5{
+    font-weight: bold;
+}
+.banner >img{
+    width: 100%;
+}
+.feature-section-mobile{
+    display: none;
+}
+.newsletter{
+    background-color: #FFFBF0;
+    
+    padding:60px 0;
+}
+
+
+@media (max-width:668px){
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .header-content, .products{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    header{ 
+        height: auto;
+    }
+    .header-text h1,p{
+        margin-bottom: 20px;
+        
+    }
+    .header-text p{
+        margin-bottom: 40px;
+        
+    }
+    .banner{
+
+    }
+    .feature-single{
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+        
+    }
+    .feature-section-mobile{
+        display: block;
+    }
+    .feature-section-mobile > .banner{
+        margin-bottom: 30px;
+    }
+
+    .feature-section{
+        display: none;
+    }
+    .banner >img{
+        margin-bottom: 30px;
+    }
+    .women-product{
+
+    }
+   
+    
+}
